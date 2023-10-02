@@ -74,7 +74,7 @@ const {isValidEmail} = require('../utils/emailValidation');
 
 const studentData = require('../studentData.json');
 
-const db = require('../db/index');
+// const db = require('../db/index');
 const { response } = require('express');
 
 controller.get('/', async (request, response) => {
