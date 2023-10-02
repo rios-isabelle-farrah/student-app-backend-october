@@ -1,9 +1,19 @@
+function repeatNTimesWithSpace(string, n){
+    if(!string) return '';
 
+    const arr = new Array(n).fill(string);
 
-// function that takes a stribng and number called n and repeats the string n times in the middle of each time.
-
-function repeatNTimesWithSpace(string,n){
-    return (`${string} `).repeat(n);
+    return arr.join(' ');
 };
 
-module.exports = repeatNTimesWithSpace;
+
+// library  => Library
+
+function capitalizeFirstLetter(string){
+
+    if(!string) return '';
+
+    return string[0].toUpperCase() + string.slice(1);
+};
+
+module.exports = {repeatNTimesWithSpace, capitalizeFirstLetter};
